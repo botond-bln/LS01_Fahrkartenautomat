@@ -8,11 +8,9 @@ public class Fahrplan {
     // Weichestellungen
     int fahrzeit = 0;
     char haltInSpandau = 'j';
-    char richtungHamburg = 'n';
+    char richtungHamburg = 'j';
     char haltInStendal = 'j';
-    char endetInWolfsburg = 'j';
-    char endetInbraunschweig = 'j';
-    char endetInHannover = 'j';
+    char endetIn = 'h';
 
     fahrzeit = fahrzeit + 8; // Fahrzeit Hbf -> Spandau
 
@@ -23,7 +21,7 @@ public class Fahrplan {
 
     if (richtungHamburg == 'j') {
         fahrzeit = fahrzeit + 96; // Fahrt Richtung Hamburg
-        System.out.println("Fahrzeit für Hamburg: "  + fahrzeit);
+        System.out.println("Die Fahrzeit für Hamburg beträgt: "  + fahrzeit + " Minuten.");
     }
 
    
@@ -37,19 +35,19 @@ public class Fahrplan {
             fahrzeit = fahrzeit + 6; // Kein Halt in Stendal
         }
 
-        if (endetInWolfsburg == 'j') {
+        if (endetIn == 'w') {
             fahrzeit = fahrzeit + 29;
-            System.out.println("Fahrzeit für Wolfsburg: " + fahrzeit); // Fahrt von Stendal West nach Wolfsburg
+            System.out.println("Die Fahrzeit für Wolfsburg beträgt: "  + fahrzeit + " Minuten."); // Fahrt von Stendal West nach Wolfsburg
         }
         
-        if (endetInbraunschweig == 'j') {
+        else if (endetIn == 'b') {
             fahrzeit = fahrzeit + 50;
-            System.out.println("Fahrzeit für Braunschweig: " + fahrzeit); // Fahrt von Stendal West nach Braunschweig
+            System.out.println("Die Fahrzeit für Braunschweig beträgt: "  + fahrzeit + " Minuten."); // Fahrt von Stendal West nach Braunschweig
         }
 
-        if (endetInHannover == 'j') {
+        else if (endetIn == 'h')  {
             fahrzeit = fahrzeit + 62;
-            System.out.println("Fahrzeit für Hannover: " + fahrzeit); // Fahrt von Stendal West nach Hannover
+            System.out.println("Die Fahrzeit für Hannover beträgt: "  + fahrzeit + " Minuten."); // Fahrt von Stendal West nach Hannover
         }
 
     }
