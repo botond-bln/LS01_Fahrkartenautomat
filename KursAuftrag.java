@@ -40,5 +40,4 @@ public class KursAuftrag {
     System.out.println("Ihr aktueller Kontostand beträgt: " + haben + " Euro");
 
   }
-
 }

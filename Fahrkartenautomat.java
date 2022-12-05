@@ -1,6 +1,9 @@
 import java.util.Scanner;
 
 class Fahrkartenautomat {
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 
 		Scanner tastatur = new Scanner(System.in);
@@ -16,6 +19,15 @@ class Fahrkartenautomat {
 		//Ticketpreis
 		System.out.print("Ticketpreis (Euro): ");
 		ticketPreis = tastatur.nextDouble();
+
+		if(ticketPreis != 1-10) {
+
+		}
+
+		else {
+			ticketPreis = 1;
+			System.out.println("Fehlerhafte Eingabe - Ticketpreis wird auf 1 gesetzt");
+		}
 
 		//Ticketpreis
 		System.out.print("Anzahl der Tickets: ");
